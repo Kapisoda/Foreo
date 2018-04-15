@@ -31,7 +31,7 @@
     
     </header>
     <AboutMe></AboutMe>
-    
+    <firm></firm>
     
   </div>
    
@@ -42,6 +42,7 @@
 
 <script>
 import AboutMe from './AboutMe.vue'
+import Firm from './Firm.vue'
 export default {
   name: 'HelloWorld',
   data () {
@@ -50,7 +51,8 @@ export default {
     }
   },
   components: {
-    AboutMe
+    AboutMe,
+    Firm
   } 
 }
 </script>
