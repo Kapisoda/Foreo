@@ -30,7 +30,7 @@
     </div>
     
     </header>
-    
+    <AboutMe></AboutMe>
     
     
   </div>
@@ -41,16 +41,16 @@
 
 
 <script>
-
+import AboutMe from './AboutMe.vue'
 export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      
     }
   },
   components: {
-    
+    AboutMe
   } 
 }
 </script>
