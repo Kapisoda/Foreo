@@ -33,7 +33,7 @@
     <AboutMe></AboutMe>
     <firm></firm>
     <VuePresentation></VuePresentation>
-    <Footer></Footer>
+    <LastComponent></LastComponent>
   </div>
    
 </template>
@@ -45,7 +45,7 @@
 import AboutMe from './AboutMe.vue'
 import Firm from './Firm.vue'
 import VuePresentation from './VuePresentation.vue'
-import Footer from './Footer.vue'
+import LastComponent from './LastComponent.vue'
 export default {
   name: 'HelloWorld',
   data () {
@@ -57,7 +57,7 @@ export default {
     AboutMe,
     Firm,
     VuePresentation,
-    Footer
+    LastComponent
   } 
 }
 </script>
