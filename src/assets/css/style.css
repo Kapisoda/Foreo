@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background-color: rgb(255, 255, 255);;
+    color: rgb(73, 73, 73);
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+/*---------------------------COMPONENTS------------------------*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #682860;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3,
+.title{
+    font-size: 110%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 500;
+}
+.title:before,
+h3:before{
+    display: inline-block;
+    height: 2px;
+    background-color: #682860;
+    content: " ";
+    width: 50px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+.title:after,
+h3:after{
+    display: inline-block;
+    height: 2px;
+    background-color: #682860;
+    content: " ";
+    width: 50px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+/* ------------------------------------ buttons --------------------------------------*/
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 10px 15px 0 0;
+
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+    
+    color: #00ffff;
+    border: 1px solid #682860;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #682860;
+    color: #00ffff;
+    border: 1px solid #682860;
+}
+
+
+.btn:hover,
+.btn:active{
+    background-color: #64145a;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    color: #ff69b4;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #64145a;
+    color: #ff69b4;
+   
+}
+.bigText{
+    text-transform: uppercase;
+    font-size: 160%;
+    font-weight: 300;
+  }
+
+/*----------------------ICONS--------------------*/
+
+.icons{
+    margin-right: 10px;
+    
+  }
+
