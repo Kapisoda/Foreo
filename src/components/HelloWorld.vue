@@ -32,7 +32,8 @@
     </header>
     <AboutMe></AboutMe>
     <firm></firm>
-    
+    <VuePresentation></VuePresentation>
+    <Footer></Footer>
   </div>
    
 </template>
@@ -43,6 +44,8 @@
 <script>
 import AboutMe from './AboutMe.vue'
 import Firm from './Firm.vue'
+import VuePresentation from './VuePresentation.vue'
+import Footer from './Footer.vue'
 export default {
   name: 'HelloWorld',
   data () {
@@ -52,7 +55,9 @@ export default {
   },
   components: {
     AboutMe,
-    Firm
+    Firm,
+    VuePresentation,
+    Footer
   } 
 }
 </script>
