@@ -3,7 +3,7 @@
         <div class="row">
             <hr>
             <img style="float: right; padding-top: 10px;" src='../assets/img/logo_FOREO.svg' alt="Foreo logo">
-            <p class="small-text">&copy; 2018 FILIP KAPUSTA ALL RIGHTS RESERVED</p>
+            <p class="small-text"> 2018 FILIP KAPUSTA ALL RIGHTS RESERVED</p>
         </div> 
     
 </template>
