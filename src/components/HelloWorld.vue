@@ -1,9 +1,14 @@
 <template>
   <div>
+    
     <header id="Home">
+      <div class="ham-nav">
+      <quick-menu  :menu-count='number' :icon-class='icons' :menu-url-list='list'></quick-menu> 
+      </div>
     <nav class="nav-bar" :class="{ 'is-sticky': stickyState }">
       <div class="row">
-        <img style="float: left; padding-top: 10px;" src='../assets/img/logo_FOREO.svg' alt="Foreo logo">
+        <a href="#Home"><img style="float: left; padding-top: 10px;" src='../assets/img/logo_FOREO.svg' alt="Foreo logo"></a>
+        
       <ul class="nav-list">
         <li>
           <a href="#Home" v-smooth-scroll="{ duration: 1000, offset: -95}">Home</a>
@@ -29,8 +34,8 @@
     
     <div class="overlay">
       <div class="bigText">Let's build something amazing together</div>
-      <a class="btn btn-full" href="#aboutMe" v-smooth-scroll="{ duration: 1000, offset: -100}">Continue</a>
-      <a class="btn btn-ghost" href="#">No</a>
+      <a class="btn btn-full" href="#aboutMe" v-smooth-scroll="{ duration: 1000, offset: -100}">CONTINUE</a>
+      <a class="btn btn-ghost" href="#">VUE.JS</a>
     </div>
     
     </header>
@@ -50,19 +55,24 @@ import AboutMe from './AboutMe.vue'
 import Firm from './Firm.vue'
 import VuePresentation from './VuePresentation.vue'
 import LastComp from './LastComp.vue'
-
+import quickMenu from 'vue-quick-menu'
 export default {
   name: 'HelloWorld',
   data () {
     return {
-      stickyState: false
+      stickyState: false,
+      number: 4,
+      icons: ["ion-android-home","ion-earth", "ion-android-person","ion-arrow-down-b"],
+      list: ["#Home", "#sectionForeo","#aboutMe", "#sectionVue"],
+
     }
   },
   components: {
     AboutMe,
     Firm,
     VuePresentation,
-    LastComp
+    LastComp,
+    quickMenu
   },
   methods:{
      sticky () {
@@ -91,7 +101,11 @@ export default {
 
 <!-- COLORS OF FOREO: light blue- green rgb(122, 222, 232) pink: rgb(251, 51, 149) dark purple rgb(32, 20, 75)-->
 <style>
-
+.ham-nav{
+  position: fixed;
+  visibility: hidden;
+  z-index: 999 !important;
+}
 .is-sticky {
     position: fixed;
     width: 100%;
@@ -112,7 +126,7 @@ export default {
     position:absolute;
     top:50%;
     left:50%;
-    z-index:999;
+    z-index: 99;
     color:#00ffff ;
     transform: translate(-50%, -50%);
 }

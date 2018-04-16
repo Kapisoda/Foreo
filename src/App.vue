@@ -12,6 +12,7 @@ export default {
 
 <style>
 @import './assets/css/style.css';
+@import './assets/css/queries.css';
 @import './assets/css/grid.css';
 @import './assets/css/ionicons.min.css';
 </style>

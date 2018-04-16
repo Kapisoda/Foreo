@@ -4,7 +4,7 @@
         <h2>Showing vue strength</h2>
     </div>
     <div class="row">
-        <div class="col span-1-of-2">
+        <div class="col span-1-of-2 res-box-mob">
             <div class="inputs">
                 <p>Add contact</p>
                 <div v-if="object.name=='' && error==true" class="danger">You'r name is misssing'</div>
@@ -18,7 +18,7 @@
                 <button @click="reset" class="button" style="float: right;">Reset</button>
             </div>
         </div>
-        <div class="col span-1-of-2">
+        <div class="col span-1-of-2 res-box-mob">
             <div class="inputs">
                 <p>You can search contact by name, last name or phone number</p>
                 <input type="text" name="name" placeholder="Search"  v-model="search"/>

@@ -33,16 +33,11 @@ let router = new Router({
 
 router.beforeEach((to, from, next) => {
   //console.log('In before each')
-  
-  
 if(to.path != '/'){
   next({path: '/'})
 } else{
   next()
 }
-
-
-
 })
 export default router
 
