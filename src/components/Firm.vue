@@ -1,5 +1,5 @@
 <template>
-  <section class="firm">
+  <section class="firm" id="sectionForeo">
     <div class="row">
         <h2>Foreo</h2>
     </div>
@@ -13,11 +13,12 @@
 </template>
 <style>
 .firm{
-    padding-top: 50px;
+    padding: 50px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/img/cool_picture_foreo.png');
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
+    
 }
 .text-about-foreo{
     text-align: center;

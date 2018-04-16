@@ -1,5 +1,5 @@
 <template>
-  <div class="sectionVue">
+  <div class="sectionVue" id="sectionVue">
     <div class="row">
         <h2>Showing vue strength</h2>
     </div>

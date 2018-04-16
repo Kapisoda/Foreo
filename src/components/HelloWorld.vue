@@ -1,22 +1,26 @@
 <template>
   <div>
-    <header>
-    <nav class="nav-bar">
+    <header id="Home">
+    <nav class="nav-bar" :class="{ 'is-sticky': stickyState }">
       <div class="row">
         <img style="float: left; padding-top: 10px;" src='../assets/img/logo_FOREO.svg' alt="Foreo logo">
       <ul class="nav-list">
         <li>
-          <a href="#aboutMe">About me</a>
+          <a href="#Home" v-smooth-scroll="{ duration: 1000, offset: -95}">Home</a>
         </li>
         <li>
-          <a href="#Foreo">Foreo</a>
+          <a href="#aboutMe" v-smooth-scroll="{ duration: 1000, offset: -95}">About me</a>
         </li>
         <li>
-          <a href="#">Vue.js</a>
+          <a href="#sectionForeo" v-smooth-scroll="{ duration: 2000, offset: -95}">Foreo</a>
+        </li>
+        <li>
+          <a href="#sectionVue" v-smooth-scroll="{ duration: 3000, offset: -95}">Vue.js</a>
         </li>
       </ul>
       </div>
     </nav>
+    
     <div class="trim">
       <video autoplay muted loop class="myVideo">
         <source src="../assets/video/Home_work.mp4" type="video/mp4"> Your browser does not support HTML5 video.
@@ -25,7 +29,7 @@
     
     <div class="overlay">
       <div class="bigText">Let's build something amazing together</div>
-      <a class="btn btn-full" href="#">Continue</a>
+      <a class="btn btn-full" href="#aboutMe" v-smooth-scroll="{ duration: 1000, offset: -100}">Continue</a>
       <a class="btn btn-ghost" href="#">No</a>
     </div>
     
@@ -46,11 +50,12 @@ import AboutMe from './AboutMe.vue'
 import Firm from './Firm.vue'
 import VuePresentation from './VuePresentation.vue'
 import LastComp from './LastComp.vue'
+
 export default {
   name: 'HelloWorld',
   data () {
     return {
-      
+      stickyState: false
     }
   },
   components: {
@@ -58,12 +63,40 @@ export default {
     Firm,
     VuePresentation,
     LastComp
-  } 
+  },
+  methods:{
+     sticky () {
+      const Vue = this
+      let scrollObject = {}
+      window.onscroll = function () {
+        scrollObject = {
+          x: window.pageXOffset,
+          y: window.pageYOffset
+        }
+        // If you want to check distance
+        if (scrollObject.y > 700) {
+          Vue.stickyState = true
+        } else {
+          Vue.stickyState = false
+        }
+      }
+    }
+  },
+  created(){
+    this.sticky();
+  }
+
 }
 </script>
 
 <!-- COLORS OF FOREO: light blue- green rgb(122, 222, 232) pink: rgb(251, 51, 149) dark purple rgb(32, 20, 75)-->
 <style>
+
+.is-sticky {
+    position: fixed;
+    width: 100%;
+    
+}
 
 .trim {
      max-height:90vh;

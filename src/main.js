@@ -3,7 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import vueSmoothScroll from 'vue-smooth-scroll'
 
+
+Vue.use(vueSmoothScroll)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
