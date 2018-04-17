@@ -82,7 +82,7 @@ export default {
           y: window.pageYOffset
         }
         // If you want to check distance
-        if (scrollObject.y > 450) {
+        if (scrollObject.y > 500) {
           Vue.stickyState = true
         } else {
           Vue.stickyState = false
