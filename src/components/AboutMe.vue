@@ -8,7 +8,7 @@
         <div class="title">WORK EXPERIENCE</div>
         <ul class="education-ul">
           <li class="subtitle">Sportski centar Arena</li>
-          <li>Developing gym management system for tracking users arrivals. - Vue.js/HTML/CSS</li>
+          <li>Developing gym management system - Vue.js/HTML/CSS</li>
           <li>Development with API architecture, routes, lodash, pagination, materialize, moment and sessions.</li>
           <li>Development and implementation of card reader.</li>
           <li class="subtitle">Roche d.o.o.</li>
@@ -89,8 +89,6 @@
 
 
 <style lang="scss" scoped>
-
-
 .ion-social-instagram:hover,
 .ion-social-instagram:active {
   color: #8a3ab9;
@@ -108,10 +106,11 @@
 
 .aboutMe {
   padding: 30px 0 50px;
-} 
+}
+
 .box,
 .bigger-box {
-  display: block; 
+  display: block;
   padding: 10px;
   font-size: 20px;
   text-align: center;
@@ -151,7 +150,7 @@
   text-align: center;
 }
 
-.bigger-box:nth-child(1){}
+.bigger-box:nth-child(1) {}
 
 .bigger-box:nth-child(2) {}
 
@@ -167,6 +166,7 @@
   margin: 0 7px;
   color: #682860;
 }
+
 
 </style>
 

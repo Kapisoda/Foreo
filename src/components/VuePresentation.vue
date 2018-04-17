@@ -142,71 +142,71 @@ export default {
 </script>
 
 <style scoped>
-
-
-.sectionVue{
-    min-height: 100vh;
-    padding-top: 40px;
+.sectionVue {
+  min-height: 100vh;
+  padding-top: 40px;
 }
 
-.inputs input{
-    display: block;
-    text-align: center;
-    height: 40px;
-    margin-bottom: 25px;
-    border: 1px solid rgba(104, 40, 96, 1);
-    width: 100%;
+.inputs input {
+  display: block;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(104, 40, 96, 1);
+  width: 100%;
 }
 
 .button {
-    background-color: rgba(104, 40, 96, 1);
-    display: inline-block;
-    color: #00ffff;
-    padding: 15px 32px;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
-    border: 1px solid rgba(104, 40, 96, 1);
+  background-color: rgba(104, 40, 96, 1);
+  display: inline-block;
+  color: #00ffff;
+  padding: 15px 32px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid rgba(104, 40, 96, 1);
 }
 
 .button:hover,
 .button:active {
-    background-color: rgba(104, 40, 96, 0.95);
-    border: 1px solid #00ffff;
+  background-color: rgba(104, 40, 96, 0.95);
+  border: 1px solid #00ffff;
 }
 
-.friend-box{
-    padding: 5px 10px;
-    display: block;
-    
-    border: 1px solid #682860;
-    cursor: pointer;
-    margin: 0 1% 1% 0;
-    transition: box-shadow 0.3s, border 0.3s;
+.friend-box {
+  padding: 5px 10px;
+  display: block;
+  border: 1px solid #682860;
+  cursor: pointer;
+  margin: 0 1% 1% 0;
+  transition: box-shadow 0.3s, border 0.3s;
 }
+
 .friend-box:hover,
-.friend-box:active{
-    box-shadow: 5px 5px 5px rgba(182, 162, 162, 0.74);
-    border: 1px solid #00ffff;
-}
-.friend-box ul li{
-    list-style: none;
+.friend-box:active {
+  box-shadow: 5px 5px 5px rgba(182, 162, 162, 0.74);
+  border: 1px solid #00ffff;
 }
 
-.sectionVue p{
-    text-align: center;
+.friend-box ul li {
+  list-style: none;
 }
-.icons-contact{
-    margin-right: 10px;
-    color:rgba(104, 40, 96, 1);
-  }
 
-  .danger{
-      color: red;
-      margin: 0;
-      text-align: left;
-      font-size: 100%;
-  }
+.sectionVue p {
+  text-align: center;
+}
+
+.icons-contact {
+  margin-right: 10px;
+  color: rgba(104, 40, 96, 1);
+}
+
+.danger {
+  color: red;
+  margin: 0;
+  text-align: left;
+  font-size: 100%;
+}
 </style>
 
 

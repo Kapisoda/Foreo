@@ -18,7 +18,6 @@
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
-    
 }
 .text-about-foreo{
     text-align: center;
