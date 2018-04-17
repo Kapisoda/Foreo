@@ -102,6 +102,10 @@
   .ham-nav {
     visibility: visible !important;
   }
+  .myVideo {
+    height: 100vh;
+    width: auto;
+  }
 }
 
 @media only screen and (max-width: 630px) {
@@ -114,6 +118,10 @@
   }
   .text-about-foreo {
     width: 100%;
+  }
+  .myVideo {
+    height: 100vh;
+    width: auto;
   }
 }
 
@@ -169,4 +177,9 @@
   .ham-nav {
     visibility: visible !important;
   }
+  .myVideo {
+    height: 100vh;
+    width: auto;
+  }
+ 
 }

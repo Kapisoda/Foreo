@@ -17,17 +17,17 @@
               <a v-scroll-to="'#aboutMe'" >About me</a>
             </li>
             <li>
-              <a v-scroll-to="'#firm'"  >Foreo</a>
+              <a v-scroll-to="'#firm'">Foreo</a>
             </li>
             <li>
-              <a v-scroll-to="'#sectionVue'"  >Vue.js</a>
+              <a v-scroll-to="'#sectionVue'">Vue.js</a>
             </li>
           </ul>
         </div>
       </nav>
       <div class="trim">
         <video autoplay muted loop class="myVideo">
-          <source src="../assets/video/Home_work.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+          <source src="../assets/video/VR-Time.mp4" type="video/mp4"> Your browser does not support HTML5 video.
         </video>
       </div>
       <div class="overlay">
@@ -61,7 +61,7 @@ export default {
       stickyState: false,
       number: 4,
       icons: ["ion-android-home","ion-earth", "ion-android-person","ion-arrow-down-b"],
-      list: ["#Home", "#sectionForeo","#aboutMe", "#sectionVue"],
+      list: ["#Home", "#firm","#aboutMe", "#sectionVue"]
 
     }
   },
@@ -128,8 +128,8 @@ export default {
 }
 
 .myVideo {
-  
   object-fit: cover;
+  width: 100vw;
   z-index: -1;
   filter: blur(5px);
   margin-left: -7px;
