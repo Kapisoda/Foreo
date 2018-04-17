@@ -42,6 +42,15 @@ h2:after {
     margin: 0 auto;
     margin-top: 30px;
 }
+h2::before {
+    content: "";
+    display: block;
+    height: 100px;
+    width: 100%;
+    background: red;
+    margin-top: -100px;
+    position: static;
+ }
 
 h3,
 .title{
