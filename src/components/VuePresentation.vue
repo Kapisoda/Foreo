@@ -1,9 +1,9 @@
 <template>
   <div class="sectionVue" id="sectionVue">
     <div class="row">
-        <h2>Showing vue strength</h2>
+        <h2>Showing vue.js strength</h2>
     </div>
-    <div class="row">
+    <div class="row margin-row">
         <div class="col span-1-of-2 res-box-mob">
             <div class="inputs">
                 <p>Add contact</p>
@@ -13,7 +13,6 @@
                 <input type="text" name="name" placeholder="Last name"  v-model="object.surname" />
                 <div v-if="object.phoneNumber=='' && error==true" class="danger">You'r phone number is misssing'</div>
                 <input type="text" name="name" placeholder="Phone number"  v-model="object.phoneNumber" />
-                
                 <button @click="addFriend" class="button">Add friend</button>
                 <button @click="reset" class="button" style="float: right;">Reset</button>
             </div>
@@ -32,9 +31,9 @@
         <h3>Contacts</h3>
     </div>
    <div class="row">
-        <p>You can remove contats from list just by clicking on them. :)</p>
+        <p>You can remove contacts from a list just by clicking on them. :)</p>
     </div>
-    <div class="row"  >
+    <div class="row margin-row"  >
       <div class="col span-1-of-5 friend-box" v-for="friend in searchContact" v-bind:key="friend.id">
         <div @click="removeFriend(friend.id)">
         <ul>
@@ -44,7 +43,6 @@
         </div>  
         </div>
     </div>
-
   </div>
 </template>
 <script>

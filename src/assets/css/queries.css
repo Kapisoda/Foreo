@@ -1,28 +1,30 @@
 @media only screen and (max-width: 1200px) {
-    .nav-bar img{
-        padding-left: 20px;  
-    }
+  .nav-bar img {
+    padding-left: 20px;
+  }
+  .margin-row {
+    margin: 0 10px;
+  }
+  .bigger-box ul li {
+    font-size: 90%;
+  }
+  .box ul li {
+    font-size: 90%;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
-    
-    
-}
-
-
-@media only screen and (max-width: 767px) {
-    .bigger-box ul li,
-    .box ul li
-    {
-        font-size: 85%;
-    }
-
-    .friend-box{
-        font-size: 70%;
-    }
-
-    h3,
-.title{
+  .margin-row {
+    margin: 0 10px;
+  }
+  .bigger-box ul li {
+    font-size: 80%;
+  }
+  .box ul li {
+    font-size: 80%;
+  }
+  h3,
+  .title {
     font-size: 90%;
     text-align: center;
     text-transform: uppercase;
@@ -30,10 +32,9 @@
     letter-spacing: 1px;
     color: black;
     font-weight: 500;
-}
-
-.title:before,
-h3:before{
+  }
+  .title:before,
+  h3:before {
     display: inline-block;
     height: 2px;
     background-color: #682860;
@@ -41,10 +42,9 @@ h3:before{
     width: 20px;
     margin-right: 10px;
     vertical-align: middle;
-}
-
-.title:after,
-h3:after{
+  }
+  .title:after,
+  h3:after {
     display: inline-block;
     height: 2px;
     background-color: #682860;
@@ -52,32 +52,88 @@ h3:after{
     width: 20px;
     margin-left: 10px;
     vertical-align: middle;
-}
-
-.nav-bar{
-    display: none;
-}
-.ham-nav{
-    visibility: visible !important;
   }
-
-
 }
 
-@media only screen and (max-width: 480px) {
-    h3,
-.title{
-    font-size: 100%;
+@media only screen and (max-width: 767px) {
+  .margin-row {
+    margin: 0 10px;
+  }
+  .bigger-box ul li,
+  .box ul li {
+    font-size: 70%;
+  }
+  .friend-box {
+    font-size: 70%;
+  }
+  h3,
+  .title {
+    font-size: 90%;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 30px;
     letter-spacing: 1px;
     color: black;
     font-weight: 500;
+  }
+  .title:before,
+  h3:before {
+    display: inline-block;
+    height: 2px;
+    background-color: #682860;
+    content: " ";
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  .title:after,
+  h3:after {
+    display: inline-block;
+    height: 2px;
+    background-color: #682860;
+    content: " ";
+    width: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .ham-nav {
+    visibility: visible !important;
+  }
 }
 
-.title:before,
-h3:before{
+@media only screen and (max-width: 630px) {
+  .bigger-box ul li,
+  .box ul li {
+    font-size: 65%;
+  }
+  .friend-box {
+    font-size: 65%;
+  }
+  .text-about-foreo {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .bigger-box ul li,
+  .box ul li {
+    font-size: 90%;
+  }
+  h3,
+  .title {
+    font-size: 90%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 500;
+  }
+  .title:before,
+  h3:before {
     display: inline-block;
     height: 2px;
     background-color: #682860;
@@ -85,10 +141,9 @@ h3:before{
     width: 35px;
     margin-right: 15px;
     vertical-align: middle;
-}
-
-.title:after,
-h3:after{
+  }
+  .title:after,
+  h3:after {
     display: inline-block;
     height: 2px;
     background-color: #682860;
@@ -96,29 +151,22 @@ h3:after{
     width: 35px;
     margin-left: 15px;
     vertical-align: middle;
-}
-
-.bigger-box ul li
-    {
-        font-size: 100%;
-    }
-
-    .text-about-foreo p{
-        text-align: center;
-        width: 100%;
-        font-size: 90%;
-        
-    }
-    
-    .res-box-mob{
-        padding: 20px 0;
-    }
-    .nav-bar{
-        display: none;
-    }
-    .ham-nav{
-        visibility: visible !important;
-       
-      }
-
+  }
+  .bigger-box ul li {
+    font-size: 100%;
+  }
+  .text-about-foreo p {
+    text-align: center;
+    width: 100%;
+    font-size: 90%;
+  }
+  .res-box-mob {
+    padding: 20px 0;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .ham-nav {
+    visibility: visible !important;
+  }
 }
