@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header id="Home">
+    <header id="Home" class="home">
       <div class="ham-nav">
         <quick-menu style="vertical-align: bottom " :menu-count='number' :icon-class='icons' :menu-url-list='list'></quick-menu>
       </div>
@@ -11,16 +11,16 @@
           </a>
           <ul class="nav-list">
             <li>
-              <a href="#Home" v-smooth-scroll="{ duration: 1000, offset: -80}">Home</a>
+              <a v-scroll-to="'#Home'"  >Home</a>
             </li>
             <li>
-              <a href="#aboutMe" v-smooth-scroll="{ duration: 1000, offset: -80}">About me</a>
+              <a v-scroll-to="'#aboutMe'" >About me</a>
             </li>
             <li>
-              <a href="#sectionForeo" v-smooth-scroll="{ duration: 1000, offset: -80}">Foreo</a>
+              <a v-scroll-to="'#firm'"  >Foreo</a>
             </li>
             <li>
-              <a href="#sectionVue" v-smooth-scroll="{ duration: 1000, offset: -80}">Vue.js</a>
+              <a v-scroll-to="'#sectionVue'"  >Vue.js</a>
             </li>
           </ul>
         </div>
@@ -32,11 +32,13 @@
       </div>
       <div class="overlay">
         <div class="bigText">Let's build something amazing together</div>
-        <a class="btn btn-full" href="#aboutMe" v-smooth-scroll="{ duration: 1000, offset: -80}">CONTINUE</a>
-        <a class="btn btn-ghost" href="#sectionVue" v-smooth-scroll="{ duration: 3000, offset: -80}">VUE.JS</a>
+        <a class="btn btn-full" href="#aboutMe">CONTINUE</a>
+        <a class="btn btn-ghost" href="#sectionVue">VUE.JS</a>
       </div>
     </header>
+    <section class="aboutMe" id="aboutMe">
     <AboutMe></AboutMe>
+    </section>
     <firm></firm>
     <VuePresentation></VuePresentation>
     <LastComp></LastComp>
@@ -72,7 +74,7 @@ export default {
     quickMenu
   },
   methods:{
-     sticky () {
+     sticky (e) {
       const Vue = this
       let scrollObject = {}
       window.onscroll = function () {
@@ -91,6 +93,7 @@ export default {
   },
   created(){
     this.sticky();
+    window.history.scrollRestoration = 'manual';
   }
 
 }
@@ -165,8 +168,8 @@ export default {
   text-transform: uppercase;
 }
 
-.nav-list li a:link,
-.nav-list li a:visited {
+.nav-list li a,
+.nav-list li a {
   text-decoration: none;
   color: #00ffff;
   font-weight: 300;
@@ -179,6 +182,7 @@ export default {
   text-decoration: none;
   color: #ff69b4;
   border-bottom: 1px solid #ff69b4;
+  cursor: pointer;
 }
 
 </style>

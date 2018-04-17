@@ -3,11 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import vueSmoothScroll from 'vue-smooth-scroll'
-
-
-Vue.use(vueSmoothScroll)
+import VueScrollTo from 'vue-scrollto'
 Vue.config.productionTip = false
+
+// ScrollTo
+Vue.use(VueScrollTo, {
+  offset: -100
+})
 
 /* eslint-disable no-new */
 new Vue({

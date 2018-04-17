@@ -1,5 +1,6 @@
 <template>
-  <section class="aboutMe" id="aboutMe">
+  
+    <div>
     <div class="row">
       <h2>About me</h2>
     </div>
@@ -84,7 +85,8 @@
         </ul>
       </div>
     </div>
-  </section>
+    </div>
+
 </template>
 
 
