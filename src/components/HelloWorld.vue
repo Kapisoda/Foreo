@@ -108,10 +108,7 @@ export default {
   z-index: 999 !important;
 }
 
-.is-sticky {
-  position: fixed;
-  width: 100%;
-}
+
 
 .trim {
   max-height: 100vh;
@@ -182,6 +179,10 @@ export default {
   color: #ff69b4;
   border-bottom: 1px solid #ff69b4;
   cursor: pointer;
+}
+.is-sticky {
+  position: fixed;
+  width: 100%;
 }
 
 </style>

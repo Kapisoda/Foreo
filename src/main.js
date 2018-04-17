@@ -8,7 +8,7 @@ Vue.config.productionTip = false
 
 // ScrollTo
 Vue.use(VueScrollTo, {
-  offset: 0
+  offset: -80
 })
 
 /* eslint-disable no-new */
