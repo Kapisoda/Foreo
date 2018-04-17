@@ -128,8 +128,7 @@ export default {
 }
 
 .myVideo {
-  width: 100vw;
-  height: 100vh;
+  
   object-fit: cover;
   z-index: -1;
   filter: blur(5px);
