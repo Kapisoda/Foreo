@@ -87,12 +87,12 @@ export default {
         } else {
           Vue.stickyState = false
         }
+        
       }
     }
   },
   created(){
     this.sticky();
-    window.history.scrollRestoration = 'manual';
   }
 
 }
@@ -114,7 +114,7 @@ export default {
 }
 
 .trim {
-  max-height: 90vh;
+  max-height: 100vh;
   overflow: hidden;
 }
 
@@ -134,8 +134,6 @@ export default {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  left: 0px;
-  top: 0px;
   z-index: -1;
   filter: blur(5px);
   margin-left: -7px;
@@ -147,11 +145,13 @@ export default {
 /*-------------------------------------NAV-------------------------------------------*/
 
 .nav-bar {
+  position: absolute;
   background: linear-gradient(to right, #00b2b2, #682860);
   padding-top: 15px;
   padding-bottom: 40px;
   z-index: 1;
   border-bottom: 2px solid #682860;
+  width: 100%;
 }
 
 .nav-list {

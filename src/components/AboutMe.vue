@@ -1,8 +1,8 @@
 <template>
   
-    <section class="aboutMe" id="aboutMe">
+    <section id="aboutMe" class="aboutMe" >
     <div class="row">
-      <h2>About me</h2>
+      <h2 >About me</h2>
     </div>
     <div class="row margin-row">
       <div class="col span-3-of-3 box">
