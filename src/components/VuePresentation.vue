@@ -1,5 +1,5 @@
 <template>
-  <div class="sectionVue" id="sectionVue">
+  <section class="sectionVue" id="sectionVue">
     <div class="row">
         <h2>Showing vue.js strength</h2>
     </div>
@@ -43,7 +43,7 @@
         </div>  
         </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import filter from '../Filter.js'

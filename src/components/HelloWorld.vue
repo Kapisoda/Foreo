@@ -36,9 +36,8 @@
         <a class="btn btn-ghost" href="#sectionVue">VUE.JS</a>
       </div>
     </header>
-    <section class="aboutMe" id="aboutMe">
+    
     <AboutMe></AboutMe>
-    </section>
     <firm></firm>
     <VuePresentation></VuePresentation>
     <LastComp></LastComp>

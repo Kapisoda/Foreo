@@ -1,6 +1,6 @@
 <template>
   
-    <div>
+    <section class="aboutMe" id="aboutMe">
     <div class="row">
       <h2>About me</h2>
     </div>
@@ -85,7 +85,7 @@
         </ul>
       </div>
     </div>
-    </div>
+    </section>
 
 </template>
 
