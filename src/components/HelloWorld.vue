@@ -32,8 +32,8 @@
       </div>
       <div class="overlay">
         <div class="bigText">Let's build something amazing together</div>
-        <a class="btn btn-full" href="#aboutMe">CONTINUE</a>
-        <a class="btn btn-ghost" href="#sectionVue">VUE.JS</a>
+        <a class="btn btn-full" href="#" v-scroll-to="'#aboutMe'">CONTINUE</a>
+        <a class="btn btn-ghost" href="#" v-scroll-to="'#sectionVue'">VUE.JS</a>
       </div>
     </header>
     
