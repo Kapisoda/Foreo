@@ -1,5 +1,4 @@
 <template>
-  
     <section id="aboutMe" class="aboutMe" >
     <div class="row">
       <h2 >About me</h2>
@@ -86,7 +85,6 @@
       </div>
     </div>
     </section>
-
 </template>
 
 
@@ -117,6 +115,7 @@
   font-size: 20px;
   text-align: center;
   font-weight: 300;
+  overflow-x: hidden;
 }
 
 .bigger-box {
